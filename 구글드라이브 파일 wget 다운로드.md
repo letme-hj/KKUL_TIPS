@@ -16,3 +16,17 @@
               **구글 드라이브에서 해당 파일 우클릭 > 공유 (share) > 링크 복사** 하면 요상하고 기다란 링크가 복사되는데,
                그걸 어딘가(메모장 등)에 기록해뒀다가 **`d`와 `view` 사이의 파일 id**를 사용하면 됨
 - `{FILE_NAME}` : 파일 저장은 당사자가 원하는 이름으로 설정하면 되는 듯
+
+<br>
+
+---
+
+<br>
+참고로, 구글이 바이러스 검사를 할 수 없다며 '그래도 다운로드하시겠습니까?'라고 묻는 정도로 큰 크기의 파일에 대해서는 wget이 안 통한다.
+
+이 때는 curl을 사용해야한다(고 한다.)
+
+`curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=FILEID" > /dev/null` <br>
+`curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=FILEID" -o FILDNAME`
+
+이렇게 하면 된다는데, 나는 다운은 됐지만 zip 파일이 unzip이 안됐다. 결국 로컬에 직접 다운받고 unzip함... 왜 안된거지!?
