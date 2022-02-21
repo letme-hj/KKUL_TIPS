@@ -1,3 +1,5 @@
+# Leaking Caffe2 thread-pool after fork. 안 뜨게 하기
+
 github에서 clone 받은 모델을 내 환경에서 돌려보다보면, 이런 warning이 꽤!! 자주 뜬다.
 
 ### `[W pthreadpool-cpp.cc:88] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)`
