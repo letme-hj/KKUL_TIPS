@@ -3,6 +3,7 @@
 1. 터미널에 `screen` 입력
 2. 원하는 거 실행
 3. `ctrl+a, d` 로 detach (`d` 입력하는 순간 알아서 빠져나와져야 함)
+4. 다시 세션에 진입하고 싶으면 `screen -r`
 
 (screen 하나 돌리고 detach 해서 나왔을 때의 화면)<br>
 <img width="395" alt="Screen Shot 2022-02-23 at 10 43 25 AM" src="https://user-images.githubusercontent.com/63252804/155248863-e05e8d27-f6a3-4fb8-b3f2-e7ba0a7b5be7.png">
