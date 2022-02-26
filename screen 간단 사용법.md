@@ -12,4 +12,10 @@
 ### 2개 이상의 세션 돌리기
 하나만 할 때는 그냥 편히 하면 되는데, 2개 이상을 하려면 screen 세션에 이름을 지정해주어야 한다.
 
+이름을 지정한 screen session을 실행시키려면
+1. `screen -S [이름]`
+2. 원하는 세션으로 진입하고 싶으면 `screen -r [이름]`
+
+(detach하는 방식은 똑같음)
+
 [참고링크](http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/screen)
