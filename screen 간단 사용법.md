@@ -18,4 +18,9 @@
 
 (detach하는 방식은 똑같음)
 
+### session 현황 확인하기
+`screen -ls`로 확인하면 됨! 내가 지정한 session 이름 까먹었을 때 꿀팁 ㅎㅎ
+<img width="743" alt="Screen Shot 2022-02-27 at 3 55 39 PM" src="https://user-images.githubusercontent.com/63252804/155871862-e9bed2c6-4781-47e2-95bd-dcb10af3be66.png">
+
+
 [참고링크](http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/screen)
