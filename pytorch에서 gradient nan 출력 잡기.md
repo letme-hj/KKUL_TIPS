@@ -1,9 +1,11 @@
 # gradient가 nan 나오는 경우 잡기
 
 **[방법]**
+
 gradient가 계산되는 부분 앞 쪽에 `torch.autograd.set_detect_anomaly(True)`를 붙이면 됨!
 
 **[결과]**
+
 <img width="705" alt="image" src="https://user-images.githubusercontent.com/63252804/172040909-dfd78c1b-b233-4b58-9351-9f00eb4adf86.png">
 
 ---
